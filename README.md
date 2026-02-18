@@ -4,7 +4,7 @@ Este repositório contém o código-fonte do meu currículo online, desenvolvido
 
 ## 🚀 Demonstração
 A versão online e sempre atualizada pode ser acessada aqui: 
-👉 [**Visualizar Currículo Online**](https://brunojsdev.github.io/NOME-DO-SEU-REPOSITORIO/)
+👉 [**Visualizar Currículo Online**](https://brunojsdev.github.io/curriculo/)
 *(Lembre-se de substituir o link acima pelo link real gerado pelo GitHub Pages)*
 
 ## ✨ Diferenciais do Projeto
