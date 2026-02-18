@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Bruno Silveira</title>
+    <style>
+        /* Configurações da Página e Fonte */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #e2e8f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            color: #1e293b;
+            line-height: 1.5;
+        }
+
+        .resume-page {
+            width: 210mm;
+            min-height: 297mm;
+            background: white;
+            margin: 20px auto;
+            padding: 20mm;
+            position: relative;
+            box-sizing: border-box;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Detalhes de Gradiente nas Bordas (Azul para Verde) */
+        .corner-tl, .corner-br {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            pointer-events: none;
+        }
+
+        /* Canto Superior Esquerdo */
+        .corner-tl { top: 0; left: 0; }
+        .corner-tl::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 8px;
+            background: linear-gradient(to right, #0052D4, #00ff88);
+        }
+        .corner-tl::after {
+            content: ''; position: absolute; top: 0; left: 0; width: 8px; height: 100%;
+            background: linear-gradient(to bottom, #0052D4, #00ff88);
+        }
+
+        /* Canto Inferior Direito */
+        .corner-br { bottom: 0; right: 0; }
+        .corner-br::before {
+            content: ''; position: absolute; bottom: 0; right: 0; width: 100%; height: 8px;
+            background: linear-gradient(to left, #00ff88, #0052D4);
+        }
+        .corner-br::after {
+            content: ''; position: absolute; bottom: 0; right: 0; width: 8px; height: 100%;
+            background: linear-gradient(to top, #00ff88, #0052D4);
+        }
+
+        /* Tipografia */
+        h1 {
+            font-size: 28pt;
+            margin: 0 0 5px 0;
+            color: #0f172a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            color: #64748b;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 15px;
+        }
+
+        .contact-info strong { color: #334155; }
+
+        h2 {
+            font-size: 13pt;
+            color: #0052D4; /* Azul que combina com a borda */
+            border-bottom: 2px solid #0052D4;
+            padding-bottom: 4px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            font-size: 11pt;
+            margin: 12px 0 4px 0;
+            color: #0f172a;
+        }
+
+        p, ul {
+            font-size: 10pt;
+            margin: 0 0 8px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+
+        .project-category {
+            font-weight: bold;
+            color: #1e293b;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            font-size: 10.5pt;
+        }
+
+        /* Configurações de Impressão para PDF perfeito */
+        @media print {
+            body { background: white; margin: 0; padding: 0; }
+            .resume-page { margin: 0; box-shadow: none; width: 100%; padding: 15mm; }
+            /* Força os navegadores a imprimirem os gradientes de fundo */
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-page">
+        <div class="corner-tl"></div>
+        <div class="corner-br"></div>
+
+        <h1>Bruno Silveira</h1>
+        <div class="contact-info">
+            <strong>Objetivo:</strong> Desenvolvedor Júnior<br>
+            <strong>Local:</strong> São Bernardo do Campo, SP | <strong>Nascimento:</strong> 27/07/2000<br>
+            <strong>Telefone:</strong> (Inserir seu número) | <strong>E-mail:</strong> (Inserir seu e-mail)<br>
+            <strong>Portfólio:</strong> brunojsdev.github.io/meu-portfolio/
+        </div>
+
+        <h2>Resumo Profissional</h2>
+        <p>Desenvolvedor de Software com formação superior em Análise e Desenvolvimento de Sistemas e sólido portfólio prático. Apaixonado por criar interfaces modernas e resolver problemas através de código. Experiência na construção de aplicações web completas, combinando lógica de programação robusta (JavaScript/Python) com design responsivo e focado no usuário. Busco uma primeira oportunidade profissional para aplicar meus conhecimentos e agregar valor à equipe.</p>
+
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li><strong>Linguagens:</strong> JavaScript (Vanilla/ES6+), Python, Java, HTML5, CSS3.</li>
+            <li><strong>Frameworks e Bibliotecas:</strong> Tailwind CSS, Pandas, Streamlit, Plotly.</li>
+            <li><strong>Ferramentas:</strong> Git, GitHub, Visual Studio Code (VS Code), Pacote Office.</li>
+            <li><strong>Outros:</strong> Lógica de Programação, Manipulação de DOM, APIs (Async/Await).</li>
+        </ul>
+
+        <h2>Experiência Prática / Portfólio</h2>
+        
+        <div class="project-category">Desenvolvimento Front-End e Criação de Interfaces (UI/UX)</div>
+        <ul>
+            <li>Desenvolvimento de aplicações web responsivas e interativas utilizando HTML5, CSS3 e JavaScript.</li>
+            <li>Sólida experiência na manipulação dinâmica do DOM, gerenciamento de estado da aplicação e tratamento de eventos de usuário em tempo real.</li>
+            <li>Criação de layouts modernos e acessíveis, adaptáveis a diferentes dispositivos, empregando Tailwind CSS e design patterns para interfaces digitais.</li>
+        </ul>
+
+        <div class="project-category">Lógica de Programação e Efeitos Visuais Avançados (JavaScript)</div>
+        <ul>
+            <li>Proficiência na implementação de lógicas complexas, incluindo simulação de requisições assíncronas (Async/Await), sincronização em tempo real via Date API e construção de algoritmos com tratamento rigoroso de erros de sintaxe.</li>
+            <li>Utilização avançada da API Canvas do HTML5 para renderizações manuais e animações performáticas, como sistemas de partículas e efeitos visuais dinâmicos.</li>
+        </ul>
+
+        <div class="project-category">Análise de Dados e Automação (Python)</div>
+        <ul>
+            <li>Desenvolvimento de painéis analíticos (Dashboards) interativos para exploração de dados utilizando Python e Streamlit, com manipulação de bases de dados via Pandas.</li>
+            <li>Criação de scripts de automação robustos orientados a objetos (POO), focados na organização de sistemas de arquivos, utilizando práticas de código seguro (tratamento de exceções e logs).</li>
+        </ul>
+
+        <h2>Formação Acadêmica</h2>
+        <ul>
+            <li><strong>Ensino Superior Completo (Tecnólogo):</strong> Análise e Desenvolvimento de Sistemas – <em>Anhanguera</em></li>
+        </ul>
+
+        <h2>Cursos Extracurriculares e Idiomas</h2>
+        <ul>
+            <li><strong>Inglês:</strong> Avançado – <em>Enjoy (Santo André)</em></li>
+            <li><strong>Informática Avançada:</strong> – <em>Enjoy (Santo André)</em></li>
+            <li><strong>Qualificação Profissional:</strong> Administração, Produção, Comércio e Serviços – <em>Corpo de Patrulheiros Mirins de Santo André</em></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
