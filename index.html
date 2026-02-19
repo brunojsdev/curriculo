@@ -11,9 +11,9 @@
             font-family: 'Roboto', Arial, sans-serif;
             background-color: #f1f5f9;
             margin: 0;
-            padding: 20px 0; /* Reduzido de 40px */
+            padding: 20px 0;
             color: #1e293b;
-            line-height: 1.4; /* Reduzido de 1.6 */
+            line-height: 1.4;
         }
 
         .resume-container {
@@ -21,7 +21,7 @@
             width: 90%;
             background: white;
             margin: 0 auto;
-            padding: 35px 50px; /* Reduzido de 50px */
+            padding: 35px 50px;
             position: relative;
             box-sizing: border-box;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -31,7 +31,7 @@
 
         .corner-tl, .corner-br {
             position: absolute;
-            width: 100px; /* Reduzido de 150px */
+            width: 100px;
             height: 100px;
             pointer-events: none;
         }
@@ -57,108 +57,47 @@
         }
 
         h1 {
-            font-size: 2rem; /* Reduzido de 2.5rem */
-            margin: 0 0 5px 0;
+            font-size: 2rem;
+            margin: 0;
             color: #0f172a;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
+        /* Subtítulo logo abaixo do nome */
+        .job-title {
+            color: #0052D4;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
         .contact-info {
-            font-size: 0.9rem; /* Reduzido de 1rem */
+            font-size: 0.9rem;
             color: #64748b;
-            margin-bottom: 15px; /* Reduzido de 25px */
+            margin-bottom: 15px;
             border-bottom: 1px solid #e2e8f0;
             padding-bottom: 10px;
         }
 
+        /* Estilização dos links para manter o azul sempre */
+        .contact-info a, .contact-info a:visited {
+            color: #0052D4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-info a:hover {
+            color: #00ff88;
+        }
 
         h2 {
-            font-size: 1.2rem; /* Reduzido de 1.4rem */
+            font-size: 1.2rem;
             color: #0052D4;
             border-bottom: 2px solid #0052D4;
             padding-bottom: 3px;
-            margin-top: 18px; /* Reduzido de 30px */
+            margin-top: 18px;
             margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        p, ul {
-            font-size: 0.9rem; /* Reduzido de 1rem */
-            margin: 0 0 8px 0;
-        }
-
-        ul { padding-left: 18px; }
-        li { margin-bottom: 4px; text-align: justify; }
-
-        .project-category {
-            font-weight: bold;
-            color: #1e293b;
-            margin-top: 12px;
-            margin-bottom: 3px;
-            font-size: 0.95rem;
-        }
-
-        @media print {
-            body { background: none; padding: 0; }
-            .resume-container { box-shadow: none; width: 100%; padding: 30px; }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="resume-container">
-        <div class="corner-tl"></div>
-        <div class="corner-br"></div>
-
-        <h1>Bruno J. Silveira</h1>
-        <div class="contact-info">
-            <strong>Objetivo:</strong> Desenvolvedor Júnior<br>
-            <strong>Local:</strong> São Bernardo do Campo, SP | <strong>Nascimento:</strong> 27/07/2000<br>
-            <strong>WhatsApp:</strong> <a href="https://wa.me/551143465977" target="_blank">+55 (11) 4346-5977</a> |
-            <strong>E-mail:</strong> <a href="mailto:brunojsilveira.dev@gmail.com" target="_blank">brunojsilveira.dev@gmail.com</a><br>
-            <strong>Portfólio:</strong> <a href="https://brunojsdev.github.io/meu-portfolio/" target="_blank">brunojsdev.github.io/meu-portfolio/</a>
-        </div>
-
-        <h2>Resumo Profissional</h2>
-        <p>Desenvolvedor de Software com formação em ADS e sólido portfólio prático. Especialista em criar interfaces modernas e resolver problemas através de código. Experiência em aplicações web completas, unindo lógica (JS/Python) a design responsivo focado no usuário.</p>
-
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-            <li><strong>Linguagens:</strong> JavaScript (ES6+), Python, Java, HTML5, CSS3.</li>
-            <li><strong>Frameworks/Libs:</strong> Tailwind CSS, Pandas, Streamlit, Plotly.</li>
-            <li><strong>Ferramentas:</strong> Git, GitHub, VS Code, Pacote Office.</li>
-            <li><strong>Core:</strong> Lógica de Programação, Manipulação de DOM, APIs (Async/Await).</li>
-        </ul>
-
-        <h2>Experiência Prática / Portfólio</h2>
-        
-        <div class="project-category">Desenvolvimento Front-End e UI/UX</div>
-        <ul>
-            <li>Aplicações web responsivas com HTML5, CSS3 e JavaScript dinâmico.</li>
-            <li>Domínio de manipulação de DOM e gerenciamento de estado em tempo real.</li>
-            <li>Layouts modernos e acessíveis utilizando Tailwind CSS e design patterns.</li>
-        </ul>
-
-        <div class="project-category">Lógica e Efeitos Visuais (JS)</div>
-        <ul>
-            <li>Implementação de lógicas assíncronas (Async/Await) e algoritmos complexos.</li>
-            <li>Animações performáticas e sistemas de partículas utilizando HTML5 Canvas API.</li>
-        </ul>
-
-        <div class="project-category">Análise de Dados e Automação (Python)</div>
-        <ul>
-            <li>Dashboards interativos com Streamlit e manipulação de dados via Pandas.</li>
-            <li>Scripts de automação (POO) com foco em segurança e tratamento de exceções.</li>
-        </ul>
-
-        <h2>Formação e Cursos</h2>
-        <ul>
-            <li><strong>Graduação:</strong> Análise e Desenvolvimento de Sistemas – <em>Anhanguera</em></li>
-            <li><strong>Inglês:</strong> Avançado – <em>Enjoy</em> | <strong>Informática:</strong> Avançada – <em>Enjoy</em></li>
-            <li><strong>Qualificação:</strong> Adm, Produção e Serviços – <em>Patrulheiros Mirins SA</em></li>
-        </ul>
-    </div>
-
-</body>
-</html>
+            text-
